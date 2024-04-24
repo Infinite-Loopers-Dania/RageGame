@@ -29,5 +29,5 @@ void AMyPlayerController::CalculateCanJump()
 
 	float VelocityLengthXY = LinearVelocity.Size2D();
 
-	bCanJump = (VelocityLengthXY > JumpThreshold);
+	bCanJump = (VelocityLengthXY < JumpThreshold);
 }
