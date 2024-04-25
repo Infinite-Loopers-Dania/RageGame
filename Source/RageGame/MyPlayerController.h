@@ -30,8 +30,7 @@ public:
 	UPROPERTY(EditAnywhere, BluePrintReadWrite, Category = "Player")
 	ACharacter* pCharacter;
 
-private:
-
+	UFUNCTION(BlueprintCallable)
 	void CalculateCanJump();
 
 };
