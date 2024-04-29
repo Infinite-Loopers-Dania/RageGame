@@ -20,6 +20,11 @@ void AMyPlayerController::Tick(float DeltaTime)
 
 }
 
+void AMyPlayerController::Use_Implementation()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("You used the interface!"));
+}
+
 void AMyPlayerController::CalculateCanJump()
 {
 
